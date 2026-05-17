@@ -1,0 +1,68 @@
+$debugMessage on$
+
+output("===== LetherScript v1.2 — String / Math / Array / Color =====\n\n");
+
+// ========== 1. String Methods ==========
+output("--- 1. String Methods ---\n");
+define s = "Hello, LetherScript!";
+
+output("  s = '", s, "'\n");
+output("  s.size() = ", s.size(), "\n");
+output("  s.length() = ", s.length(), "\n");
+output("  s.empty() = ", s.empty(), "\n");
+output("  s.find(\"Lether\") = ", s.find("Lether"), "\n");
+output("  s.rfind(\"e\") = ", s.rfind("e"), "\n");
+output("  s.substr(7, 8) = '", s.substr(7, 8), "'\n");
+output("  s.sub(7, 15) = '", s.sub(7, 15), "'\n");
+output("  s.starts_with(\"Hello\") = ", s.starts_with("Hello"), "\n");
+output("  s.ends_with(\"!\") = ", s.ends_with("!"), "\n");
+output("  s.append(\"!!\") = '", s.append("!!"), "'\n");
+
+define t = "abc";
+define rep = t.replace(1, 1, "XYZ");
+output("  \"abc\".replace(1,1,\"XYZ\") = '", rep, "'\n");
+
+define ins = t.insert(1, "123");
+output("  \"abc\".insert(1,\"123\") = '", ins, "'\n");
+
+define era = t.erase(1, 3);
+output("  \"abc\".erase(1,3) = '", era, "'\n");
+
+output("  \"abc\".compare(\"abc\") = ", "abc".compare("abc"), "\n");
+output("  \"abc\".compare(\"xyz\") = ", "abc".compare("xyz"), "\n");
+
+// ========== 2. Math Functions ==========
+output("\n--- 2. Math Functions ---\n");
+output("  sqrt(25) = ", sqrt(25), "\n");
+output("  abs(-42) = ", abs(-42), "\n");
+output("  ceil(3.2) = ", ceil(3.2), "\n");
+output("  floor(3.8) = ", floor(3.8), "\n");
+output("  round(3.5) = ", round(3.5), "\n");
+output("  pow(2, 10) = ", pow(2, 10), "\n");
+output("  min(10, 20) = ", min(10, 20), "\n");
+output("  max(10, 20) = ", max(10, 20), "\n");
+
+// ========== 3. Array push/delete ==========
+output("\n--- 3. Array Methods ---\n");
+define arr[3] = (1, 2, 3);
+output("  initial arr = ", arr, "\n");
+
+arr.push(4);
+output("  after push(4) = ", arr, "\n");
+
+arr.push(5);
+output("  after push(5) = ", arr, "\n");
+
+arr.delete(0);
+output("  after delete(0) = ", arr, "\n");
+
+// ========== 4. colorfulText ==========
+output("\n--- 4. colorfulText ---\n");
+colorfulText("C", "This is red text! ");
+colorfulText("A", "This is green text!\n");
+
+define msg = "Variable text in yellow";
+colorfulText("6", msg);
+colorfulText("F", "\nBack to white\n");
+
+output("\n===== All tests passed! =====\n");

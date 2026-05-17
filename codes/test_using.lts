@@ -1,0 +1,19 @@
+$debugMessage on$
+
+output("=== Using Header Files Demo ===\n\n");
+
+// Import headers using <header> syntax (searches headers/ folder)
+using <math_utils>;
+using <io_utils>;
+
+output("Using functions from headers:\n");
+
+define val = 5;
+output("  square(5) = ", square(val), "\n");
+output("  cube(5)   = ", cube(val), "\n");
+output("  double(5) = ", double(val), "\n");
+
+output("\nUsing io_utils:\n");
+print_summary("result", square(val) + cube(val));
+
+output("\nDone!\n");

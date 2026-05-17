@@ -1,0 +1,29 @@
+$debugMessage on$
+
+output("=== File I/O Test ===\n");
+
+// 1) output redirection to file
+output.file("output_test.txt");
+output("Hello from LetherScript!\n");
+output("This goes to file.\n");
+output(format("2 + 3 = {2 + 3}\n"));
+output.fileClose();
+
+output("File written. Now reading back...\n");
+
+// 2) define filestream and read back
+define filestream reader;
+reader.open("output_test.txt");
+inputLine.fileStream(reader, line1);
+output(format("Read back: {line1}\n"));
+
+reader.close();
+
+// 3) write to filestream with .open
+define filestream writer;
+writer.open("output_test2.txt");
+output.fileStream(writer, "Written via filestream!\n");
+output.fileStream(writer, format("10 * 5 = {10 * 5}\n"));
+writer.close();
+
+output("Done!\n");

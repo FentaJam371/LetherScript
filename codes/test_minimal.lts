@@ -1,0 +1,25 @@
+$debugMessage on$
+
+define x = 42;
+define y = "hello\n";
+define arr1[3] = (10, 20, 30);
+define arr2[4] = (0);
+
+output(x);
+output("\n");
+output(y);
+
+output("arr1 = ");
+output(arr1);
+output("\n");
+
+output("arr2 = ");
+output(arr2);
+output("\n");
+
+arr1[1] = 99;
+
+output(format("arr1[1] = {arr1[1]}\n"));
+
+define sum = arr1[0] + arr1[1] + arr1[2];
+output(format("sum of arr1 = {sum}\n"));
