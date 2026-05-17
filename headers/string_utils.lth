@@ -1,0 +1,7 @@
+// string_utils.lth — simple string helpers
+define greet(name) :{
+    return "Hi, " + name + "!";
+}
+define capitalize(word) :{
+    return word;
+}

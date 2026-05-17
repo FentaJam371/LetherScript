@@ -1,0 +1,9 @@
+// io_utils.lth — I/O utility header
+define print_summary(name, val) :{
+    output("Summary [", name, "]: ", val, "\n");
+}
+
+define ask_number(prompt_text) :{
+    input(x, prompt_text);
+    return x;
+}

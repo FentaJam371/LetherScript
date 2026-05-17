@@ -1,0 +1,14 @@
+// math_utils.lth — LetherScript math utility header
+// 数学工具函数
+
+define square(x) :{
+    return x * x;
+}
+
+define cube(x) :{
+    return x * x * x;
+}
+
+define double(x) :{
+    return x * 2;
+}
