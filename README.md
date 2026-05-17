@@ -1,8 +1,8 @@
 # LetherScript v1.2
 
-> 一个轻量级的 Windows 控制台脚本语言解释器，支持变量、数组、函数、字符串操作、数学运算、文件 I/O、彩色输出等功能。
+> 一个轻量级的基于C++开发的 Windows 控制台脚本语言解释器，支持变量、数组、函数、字符串操作、数学运算、文件 I/O、彩色输出等功能。
 >
-> A lightweight Windows console script language interpreter with variables, arrays, functions, string operations, math functions, file I/O, and colored console output.
+> A lightweight Windows console script language developed based on C++ interpreter with variables, arrays, functions, string operations, math functions, file I/O, and colored console output.
 
 ---
 
@@ -224,7 +224,6 @@ $debugMessage on$    // 调试消息 / Debug messages
 ```
 LetherScript/
 ├── LetherScript-v1.2.cpp      ← 解释器源代码 / Interpreter source
-├── LetherScript-v0.1.cpp      ← 旧版源代码 / Legacy source
 ├── headers/                   ← 头文件库 / Header library
 │   ├── math_utils.lth
 │   ├── io_utils.lth
